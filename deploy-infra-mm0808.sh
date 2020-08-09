@@ -17,18 +17,6 @@ GH_OWNER=$(cat ~/.github/mm0808-owner)
 GH_REPO=$(cat ~/.github/mm0808-repo)
 GH_BRANCH=main
 
-echo Vars created so far:
-echo GH_ACCESS_TOKEN = $GH_ACCESS_TOKEN
-echo GH_OWNER = $GH_OWNER
-echo GH_REPO = $GH_REPO
-echo GH_BRANCH = $GH_BRANCH
-echo CODEPIPELINE_BUCKET = $CODEPIPELINE_BUCKET
-echo AWS_ACCOUNT_ID = $AWS_ACCOUNT_ID
-echo EC2_INSTANCE_TYPE = $EC2_INSTANCE_TYPE
-echo CLI_PROFILE = $CLI_PROFILE
-echo REGION = $REGION
-echo STACK_NAME = $STACK_NAME
-
 # Deploy static resources
 echo -e "\n\n========== Deploying setup.yml static  resources =========="
 aws cloudformation deploy \
