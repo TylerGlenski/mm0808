@@ -1,6 +1,6 @@
 const { hostname } = require("os");
 const http = require("http");
-const message = "Hello from from cloud and github\n";
+const message = "Hello from from cloud and github. Here is a change\n";
 const port = 8080;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
